@@ -1,30 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oJm-cb-4qz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="Di9-tt-Ryz">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FullCustomLoader_A_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oJm-cb-4qz" customClass="ViewController" customModule="FullCustomLoader_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="Srx-B9-ytI"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCV-AK-LZW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="iyZ-0U-m9a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PoP-RU-jfo">
+                                <rect key="frame" x="152.5" y="175" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GQO-eg-fcN"/>
+                                    <constraint firstAttribute="width" constant="70" id="bdl-R0-aMJ"/>
+                                </constraints>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopLoader:" destination="oJm-cb-4qz" eventType="touchUpInside" id="g5j-bR-XZh"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZK-Gl-vRh">
+                                <rect key="frame" x="152.5" y="90" width="70" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="cio-uu-OGV"/>
+                                    <constraint firstAttribute="height" constant="50" id="n3r-Dp-vnb"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startLoader:" destination="oJm-cb-4qz" eventType="touchUpInside" id="tZJ-io-Ni1"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qZK-Gl-vRh" firstAttribute="centerX" secondItem="iyZ-0U-m9a" secondAttribute="centerX" id="aBO-gt-ccH"/>
+                            <constraint firstItem="qZK-Gl-vRh" firstAttribute="top" secondItem="Srx-B9-ytI" secondAttribute="bottom" constant="70" id="hhA-GE-TIa"/>
+                            <constraint firstItem="PoP-RU-jfo" firstAttribute="top" secondItem="qZK-Gl-vRh" secondAttribute="bottom" constant="35" id="n3I-vQ-gPu"/>
+                            <constraint firstItem="PoP-RU-jfo" firstAttribute="centerX" secondItem="iyZ-0U-m9a" secondAttribute="centerX" id="sPv-O9-avO"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xp-CK-bcR" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

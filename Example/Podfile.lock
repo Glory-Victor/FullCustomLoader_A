@@ -1,0 +1,16 @@
+PODS:
+  - FullCustomLoader_A (0.1.0)
+
+DEPENDENCIES:
+  - FullCustomLoader_A (from `../`)
+
+EXTERNAL SOURCES:
+  FullCustomLoader_A:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FullCustomLoader_A: 5f547dea864ab43c3eaa5b7a8ed1dd4031a6e6c4
+
+PODFILE CHECKSUM: 03a5474c2835a157e5a0e5a9cf37339ff74bbd35
+
+COCOAPODS: 1.7.2
